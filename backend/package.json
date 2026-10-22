@@ -1,0 +1,24 @@
+{
+  "name": "@piple/backend",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./src/dev.ts",
+    "start": "node ./src/dev.ts",
+    "build": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "migrate": "node ./scripts/migrate.ts",
+    "seed": "node ./scripts/seed.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "@piple/shared": "0.1.0",
+    "hono": "^4.6.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "~5.6.3",
+    "vitest": "4.1.12"
+  }
+}
